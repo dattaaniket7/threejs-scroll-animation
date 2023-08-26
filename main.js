@@ -26,3 +26,8 @@ const material = new THREE.MeshBasicMaterial({
   color: 0xff6247,
   wireframe: true,
 });
+const torus = new THREE.Mesh(geometry, material);
+
+scene.add(torus);
+
+renderer.render(scene, camera);
